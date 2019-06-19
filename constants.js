@@ -1,3 +1,10 @@
+const operations = {
+  ADDING: "+",
+  SUBTRACTION: "-",
+  MULTIPLICATION: "*",
+  DIVISION: "/"
+};
+
 const errors = {
   INVALID_INPUT: new Error(
     "Input string should contain numbers, operators and parentheses separated by space"
@@ -7,4 +14,4 @@ const errors = {
   UNCERTAINTY: new Error("Uncertainty was gotten when calculating")
 };
 
-module.exports = { errors };
+module.exports = { operations, errors };
