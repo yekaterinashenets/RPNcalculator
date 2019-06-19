@@ -1,0 +1,14 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Arithmetic Expressions Calculator",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha */test.js"
+  },
+  "author": "Katsiaryna Shenets",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
