@@ -4,11 +4,13 @@
   "description": "Arithmetic Expressions Calculator",
   "main": "app.js",
   "scripts": {
-    "test": "mocha */test.js"
+    "test": "mocha src/*/test.js",
+    "coverage": "nyc npm test"
   },
   "author": "Katsiaryna Shenets",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   }
 }
