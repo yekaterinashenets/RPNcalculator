@@ -5,6 +5,9 @@ const test = methodToTest => (expression, expectedResult) => {
   }
 };
 
+const getStackTop = stack => stack[stack.length - 1];
+
 module.exports = {
-  test
+  test,
+  getStackTop
 };

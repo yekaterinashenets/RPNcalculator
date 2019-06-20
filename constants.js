@@ -1,8 +1,15 @@
-const operations = {
+const operators = {
   ADDING: "+",
   SUBTRACTION: "-",
   MULTIPLICATION: "*",
   DIVISION: "/"
+};
+
+const operatorsPrecedences = {
+  [operators.DIVISION]: 2,
+  [operators.MULTIPLICATION]: 2,
+  [operators.ADDING]: 1,
+  [operators.SUBTRACTION]: 1
 };
 
 const errors = {
@@ -14,4 +21,4 @@ const errors = {
   UNCERTAINTY: new Error("Uncertainty was gotten when calculating")
 };
 
-module.exports = { operations, errors };
+module.exports = { operators, operatorsPrecedences, errors };

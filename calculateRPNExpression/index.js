@@ -1,4 +1,4 @@
-const { operations, errors } = require("../constants");
+const { operators, errors } = require("../constants");
 const {
   isNumeric,
   isString,
@@ -29,16 +29,16 @@ const calculateRPNExpression = exp => {
       const a = resultStack.pop();
       const b = resultStack.pop();
       switch (expCharacters[i]) {
-        case operations.ADDING:
+        case operators.ADDING:
           resultStack.push(parseInt(a) + parseInt(b));
           break;
-        case operations.SUBTRACTION:
+        case operators.SUBTRACTION:
           resultStack.push(parseInt(b) - parseInt(a));
           break;
-        case operations.MULTIPLICATION:
+        case operators.MULTIPLICATION:
           resultStack.push(parseInt(a) * parseInt(b));
           break;
-        case operations.DIVISION:
+        case operators.DIVISION:
           resultStack.push(parseInt(b) / parseInt(a));
           break;
         default:
