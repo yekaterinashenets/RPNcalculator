@@ -4,6 +4,6 @@ A program to calculate arithmetic expressions using TDD approach. It consists fr
 ## Commands
  `npm install`
 
-To run reading expressions from file:  `node app.js fileName`
-To run tests:  `npm run test`
-To check coverage:  `npm run coverage`
+<br/>To run reading expressions from file:  `node app.js fileName` 
+<br/>To run tests:  `npm run test`
+<br/>To check coverage:  `npm run coverage`
